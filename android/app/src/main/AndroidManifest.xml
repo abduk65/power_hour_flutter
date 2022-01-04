@@ -1,8 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.power_hour_flutter">
+    package="com.example.power_hour_flutter"
+        xmlns:tools="http://schemas.android.com/tools"> <!-- Add this -->
+
+    
    <application
         android:label="power_hour_flutter"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        tools:replace="android:label" 
+>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
